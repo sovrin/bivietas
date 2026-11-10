@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34457A"/>
+      <stop offset="1" stop-color="#121A2E"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="pole" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F4F6FB"/>
+      <stop offset="1" stop-color="#C9D0E0"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6FD3FF"/>
+      <stop offset="1" stop-color="#3A8DDE"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF9B73"/>
+      <stop offset="1" stop-color="#EE5A45"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="lift" x="-20%" y="-30%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)" filter="url(#shadow)"/>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#sheen)"/>
+  <ellipse cx="512" cy="812" rx="150" ry="20" fill="#000" opacity="0.3"/>
+  <rect x="488" y="230" width="48" height="582" rx="24" fill="url(#pole)" filter="url(#lift)"/>
+  <g stroke-linejoin="round" stroke-width="40" filter="url(#lift)">
+    <path d="M300 300 H672 L748 366 L672 432 H300 Z" fill="url(#cool)" stroke="url(#cool)"/>
+    <path d="M724 500 H352 L276 566 L352 632 H724 Z" fill="url(#warm)" stroke="url(#warm)"/>
+  </g>
+</svg>

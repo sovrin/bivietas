@@ -1,0 +1,21 @@
+.build/
+.swiftpm/
+xcuserdata/
+
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.hmap
+*.dSYM
+*.dSYM.zip
+*.xcarchive
+
+# macOS
+.DS_Store
+
+# Local notes
+HANDOFF.md
