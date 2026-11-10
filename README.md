@@ -4,7 +4,7 @@ Native macOS link router for browser profiles.
 
 bivietas registers as your default browser, catches every link you click in other apps, and opens it in the right browser profile. Work links go to the Work profile and everything else goes to Personal, based on rules you set.
 
-![bivietas settings window with a list of routing rules](docs/screenshot.png)
+<img src="docs/menubar.png" width="340" alt="bivietas menu bar panel listing recently routed links and the profile each one opened in">
 
 ## Features
 
@@ -16,7 +16,7 @@ bivietas registers as your default browser, catches every link you click in othe
 - **Activity.** Shows recent links with their rule and target, and lets you reopen one in another profile.
 - **Menu bar only.** Pause routing, see recent links and where each one went, reopen one in another profile on hover, open at login.
 
-<img src="docs/menubar.png" width="340" alt="bivietas menu bar panel listing recently routed links and the profile each one opened in">
+![bivietas settings window with a list of routing rules](docs/screenshot.png)
 
 Safari isn't supported because it can't open a link in a given profile. Arc isn't supported because it ignores `--profile-directory`.
 
