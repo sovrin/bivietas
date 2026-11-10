@@ -14,7 +14,9 @@ bivietas registers as your default browser, catches every link you click in othe
 - **Redirect unwrapping.** Rules match the real destination inside Outlook SafeLinks, Google and Slack redirects. You can add your own redirect wrappers.
 - **Tester.** Paste a link to see which rule matches and where it would open, without opening it.
 - **Activity.** Shows recent links with their rule and target, and lets you reopen one in another profile.
-- **Menu bar only.** Pause routing, see recent links, open at login.
+- **Menu bar only.** Pause routing, see recent links and where each one went, reopen one in another profile on hover, open at login.
+
+<img src="docs/menubar.png" width="340" alt="bivietas menu bar panel listing recently routed links and the profile each one opened in">
 
 Safari isn't supported because it can't open a link in a given profile. Arc isn't supported because it ignores `--profile-directory`.
 
