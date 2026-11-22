@@ -1,0 +1,15 @@
+{
+  "originHash" : "627d144cf78e1c0c9935f6122c99d6bdcfb3fb331e975acff676f50799155e7d",
+  "pins" : [
+    {
+      "identity" : "paritas",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sovrin/paritas",
+      "state" : {
+        "revision" : "5afcd723ba857cb1d51c12212e42f4ce5a83dca3",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}

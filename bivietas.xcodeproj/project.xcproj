@@ -12,8 +12,11 @@
   },
   "packages": [
     {
-      "kind": "local",
-      "path": "../paritas",
+      "kind": "remote",
+      "repository": "https://github.com/sovrin/paritas",
+      "version": {
+        "up-to-next-major-version": "0.1.0",
+      },
     },
   ],
   "files": [
