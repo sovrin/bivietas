@@ -1,4 +1,5 @@
 import AppKit
+import Paritas
 
 /// A link must never be dropped silently: tell the user and offer to copy it.
 enum LaunchFailureAlert {
@@ -12,12 +13,5 @@ enum LaunchFailureAlert {
         if alert.runModal() == .alertFirstButtonReturn {
             Pasteboard.copy(url.absoluteString)
         }
-    }
-}
-
-enum Pasteboard {
-    static func copy(_ string: String) {
-        NSPasteboard.general.clearContents()
-        NSPasteboard.general.setString(string, forType: .string)
     }
 }

@@ -1,3 +1,4 @@
+import Paritas
 import SwiftUI
 
 /// Content of `PickerPanel`: numbered profiles plus "always use this" for the host.

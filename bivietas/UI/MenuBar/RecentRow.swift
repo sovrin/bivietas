@@ -1,3 +1,4 @@
+import Paritas
 import SwiftUI
 
 /// One recent link: source app, host, when, and the profile it went to.
@@ -28,11 +29,13 @@ struct RecentRow: View {
                     .transition(.opacity)
             }
         }
-        .padding(.horizontal, 9)
+        // Same frame and highlight as Paritas' HoverRow; not one because the whole row isn't a button.
+        .padding(.leading, 9)
+        .padding(.trailing, 6)
         .padding(.vertical, 5)
         .background(
-            RoundedRectangle(cornerRadius: 6, style: .continuous)
-                .fill(Color.primary.opacity(hovering ? 0.07 : 0)))
+            RoundedRectangle(cornerRadius: PanelMetrics.rowRadius, style: .continuous)
+                .fill(Color.primary.opacity(hovering ? PanelMetrics.highlight : 0)))
         .contentShape(Rectangle())
         .onHover { hovering = $0 }
         .animation(.easeOut(duration: 0.12), value: hovering)
