@@ -22,7 +22,7 @@ Safari isn't supported because it can't open a link in a given profile. Arc isn'
 
 ## Requirements
 
-- macOS 15 or later
+- macOS 26 or later
 - Xcode 27 or later to build it
 
 ## Build

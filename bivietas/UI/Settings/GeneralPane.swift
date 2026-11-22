@@ -1,3 +1,4 @@
+import Paritas
 import SwiftUI
 
 struct GeneralPane: View {
@@ -82,7 +83,7 @@ struct GeneralPane: View {
                         }
                     }
                 LabeledContent("Rules file") {
-                    Button("Show in Finder") { NSWorkspace.shared.activateFileViewerSelecting([model.configFileURL]) }
+                    Button("Show in Finder") { showInFinder(model.configFileURL) }
                 }
             }
 

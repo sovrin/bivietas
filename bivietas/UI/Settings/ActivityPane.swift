@@ -1,3 +1,4 @@
+import Paritas
 import SwiftUI
 
 /// Table of routed links (in memory only), with reopen and copy.
